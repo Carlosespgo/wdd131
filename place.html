@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Alto - Bolivia</title>
+    <meta name="description" content="Place page.">
+    <meta name="author" content="Carlos Mario Espinel Gomez">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>El Alto</h1>
+    </header>
+    <main>
+        <div id="line"></div>
+        <section class="body_page">
+            <picture id="background">
+                <source media="(min-width: 1000px)" srcset="images/elAltoH.webp">
+                <source media="(min-width: 650px)" srcset="images/elAltoH.webp">
+                <img src="images/ElAlto.webp" alt="El Alto city">
+            </picture>
+            <div class="data">
+                <h2 id="dataText">Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 363 km2</li>
+                    <li><strong>Population:</strong> 885.035</li>
+                    <li><strong>Country:</strong> Bolivia</li>
+                    <li><strong>Languages:</strong> Spanish, Aymara</li>
+                    <li><strong>Currency:</strong> Bolivian peso</li>
+                    <li><strong>Time Zone:</strong> UTC-4</li>
+                    <li><strong>Calling Code:</strong> +591</li>
+                    <li><strong>Internet TLD:</strong>.bo</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h2 id="weatherText">Weather</h2>
+                <img src="images/weatherS.svg" alt="Weather simbol">
+                <ul>
+                    <li><strong>Temperature:</strong> 7.2 °C</li>
+                    <li><strong>Conditions:</strong> Partly cloudy</li>
+                    <li><strong>Wind:</strong> 38 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windChillValue"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Carlos Espinel - Colombia</p>
+        <p>Last Modification: <span class="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@media screen and (min-width: 650px) {
+
+    .body_page {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    aspect-ratio: 16 / 8;
+    }
+
+    .data, .weather {
+    max-width: 40%; 
+    box-sizing: border-box;
+    font-size: 1.2vw;
+    padding: 1vw;
+    }
+
+    .data {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    }
+
+    .weather {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    }
+
+    .weather img {
+    display: none;
+    }
+
+    #dataText {
+        background-color: var(--yellow-color);
+        color: black;
+        padding: 0.5rem;
+        border-radius: 10%;
+    }
+
+    #weatherText::after {
+    content: "";
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    margin-left: 0.5rem;
+    background-image: url('../images/weatherS2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    }
+
+    #dataText,
+    #weatherText {
+    background-color: var(--yellow-color);
+    color: black;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 1.5vw;
+    text-align: left;
+    }
+
+}
