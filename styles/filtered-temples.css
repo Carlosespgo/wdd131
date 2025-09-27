@@ -1,0 +1,135 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    background-color: rgb(253, 207, 89);
+}
+
+header p{
+    font-size:2rem;
+    font-weight: 800;
+    color: rgb(83, 69, 5);
+}
+
+#menu{
+    font-size: 2rem;
+    border: 0;
+    padding: 3px;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu:hover{
+    background-color: rgb(255, 229, 113);
+    color: rgb(83, 69, 5);
+    border-radius: 25%;
+    transform: scale(1.1);
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+nav{
+    padding: 1rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+nav a{
+    display: none;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 1rem;
+}
+
+nav a:hover{
+    text-decoration: wavy;
+    background-color: rgb(255, 229, 113);
+    color: rgb(83, 69, 5);
+    border-radius: 50%;
+}
+
+.open a:hover{
+    text-decoration: wavy;
+    background-color: rgb(255, 229, 113);
+    color: rgb(83, 69, 5);
+    border-radius: 0;
+}
+
+.open a{
+    display: block;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+div{
+    display: block;
+    margin: 1rem 25px;
+    justify-content: center;
+}
+
+div img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+div p{
+    margin: 0.2rem 0 0 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+#temples{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+section{
+    border: 1px solid gray;
+    padding: 5px;
+    background-color: rgb(255, 222, 140);
+}
+
+footer{
+    grid-column: 1 / 4;
+    text-align: center;
+    background-color: rgb(253, 207, 89);
+    padding: 1.5rem;
+}
+
+footer p{
+    font-size: 18px;
+    padding: 5px 0 5px 0;
+    color: black;
+}

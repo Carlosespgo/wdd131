@@ -1,0 +1,22 @@
+@media screen and (min-width: 740px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #menu{
+        display: none;
+    }
+
+    nav ul{
+        justify-content: flex-end;
+        flex-direction: row;
+        border-radius: 5%;
+    }
+
+    nav a{
+        display: block;
+        flex: 1 1 100%;
+    }
+}
