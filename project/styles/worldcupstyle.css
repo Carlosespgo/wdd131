@@ -308,7 +308,7 @@ header img{
 .country{
     background-color: var(--back2);
     border-radius: 8px;
-    width: 150;
+    width: 150px;
     flex-shrink: 0;
     border: 1px solid var(--back1);
 }
@@ -430,15 +430,15 @@ header img{
     transition: background-color 0.3s;
 }
 
-.players tbody tr#red:hover{
+.players tbody tr.red:hover{
     background-color: var(--shadow1);
 }
 
-.players tbody tr#blue:hover{
+.players tbody tr.blue:hover{
     background-color: var(--shadow2);
 }
 
-.players tbody tr#green:hover{
+.players tbody tr.green:hover{
     background-color: var(--shadow3);
 }
 
