@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldcup-2026</title>
+    <link rel="stylesheet" href="styles/worldcupstyle.css">
+    <script src="script/worldcup.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="https://gkpb.com.br/wp-content/uploads/2023/05/copa-do-mundo-2026-logo1.jpg.webp" alt="cupLogo">
+            <div>
+                <h1>FIFA Worldcup-2026</h1>
+                <p>USA, Mexico, Canada</p>
+            </div>
+        </div>
+        <button type="button" id="menu"></button>
+        <p id="countdown" class="hidden">Only <strong><span id="daysRemaining"></span></strong> days left until the World Cup!</p>
+    </header>
+    <main>
+        <section class="info">
+            <h3>Cup Information</h3>
+            <p>The 2026 FIFA World Cup Mexico/United States/Canada will be the 23rd edition of the FIFA World Cup<br> and will take place from June 11 to July 19, 2026, in Canada, the United States, and Mexico.<br>
+            The triple venue was chosen on June 13, 2018, during the 68th FIFA Congress in Moscow, Russia. <br>This is the first time that the hosting rights have been awarded to three countries. <br>Mexico will be the first country to host three World Cups (after 1970 and 1986), <br>the United States will be the sixth to host at least two editions (after 1994), and Canada will host for the first time.
+            </p>
+        </section>
+        <section class="dates">
+            <h3>Dates</h3>
+            <div id="date1">
+                Group Stage fixtures
+                <p><strong>Thursday, 11 June - Saturday, 27 June</strong></p>
+            </div>
+            <div id="date2">
+                Round of 32 fixtures
+                <p><strong>Sunday, 28 June - Friday, 3 July</strong></p>
+            </div>
+            <div id="date3">
+                Round of 16 fixtures
+                <p><strong>Saturday, 4 July - Tuesday, 7 July</strong></p>
+            </div>
+            <div id="date4">
+                Quarter-final fixtures
+                <p><strong>Thursday, 9 July - Saturday, 11 July</strong></p>
+            </div>
+            <div id="date5">
+                Semi-final fixtures
+                <p><strong>Tuesday, 14 July and Wednesday, 15 July</strong></p>
+            </div>
+            <div id="date6">
+                bronze final
+                <p><strong>Saturday, 18 July</strong></p>
+            </div>
+            <div id="date7">
+                Great Final
+                <p><strong>Sunday, 19 July</strong></p>
+            </div>
+        </section>
+        <section class="teams">
+            <h3>Qualified Teams</h3>
+            <p>These are the teams that have qualified for this page so far.<br>(Click on each logo to see the qualified teams.)</p>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="AFC">
+                        <img src="images/afc-logo.png" alt="AFC logo">
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>Australia</li>
+                            <li>Iran</li>
+                            <li>Japan</li>
+                            <li>Jordan</li>
+                            <li>South Korea</li>
+                            <li>Uzbekistan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="CAF">
+                        <img src="images/CAF logo.png" alt="CAF logo">
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>Egypt</li>
+                            <li>Morocco</li>
+                            <li>Tunisia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="CONCACAF">
+                        <img src="images/CONCACAF logo.png" alt="CONCACAF logo">
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>Canada</li>
+                            <li>Mexico</li>
+                            <li>United States</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="CONMEBOL">
+                        <img src="images/CONMEBOL logo.png" alt="CONMEBOL logo">
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>Argentina</li>
+                            <li>Ecuador</li>
+                            <li>Colombia</li>
+                            <li>Uruguay</li>
+                            <li>Brazil</li>
+                            <li>Paraguay</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="OFC">
+                        <img src="images/OFC logo.png" alt="OFC logo">
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>New Zealand</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="UEFA">
+                        <img src="images/UEFA_Logo.png" alt="UEFA logo">
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>The European qualifiers are not over yet.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="locations">
+            <h3>Stadiums and Locations</h3>
+            <button type="button" id="back"></button>
+            <div class="cities slide active">
+                <div class="country" id="canada">
+                    <h5>Canada</h5>
+                    <ul>
+                        <li>Toronto</li>
+                        <li>Vancouver</li>
+                    </ul>
+                </div>
+                <div class="country" id="mexico">
+                    <h5>Mexico</h5>
+                    <ul>
+                        <li>Guadalajara</li>
+                        <li>Mexico City</li>
+                        <li>Monterrey</li>
+                    </ul>
+                </div>
+                <div class="country" id="usa">
+                    <h5>USA</h5>
+                    <ul>
+                        <li>Atlanta</li>
+                        <li>Boston</li>
+                        <li>Dallas</li>
+                        <li>Houston</li>
+                        <li>Kansas City</li>
+                        <li>Los Angeles</li>
+                        <li>Miami</li>
+                        <li>New York</li>
+                        <li>Philadelphia</li>
+                        <li>San Francisco</li>
+                        <li>Seattle</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="vancouver slide">
+                <p>BC Place Vancouver</p>
+                <img src="http://oct15.marlon-and-tobias.com/wp-content/uploads/2014/02/BC-Place-720x380.jpg" alt="BC Place Vancouver">
+            </div>
+            <div class="azteca slide">
+                <p>Estadio Azteca Mexico City</p>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7MxXZGUaE_u3RaF_YyrfzjvEvFGUalwFTv4U5I6U-IgXCJJe96uAB0LVyLRISzCXJOnsu4yJTfgOYUlhVAvkFIhSCFQoo3zS_bphwI9-z5ca4e1B2H1e2_gs4QGhhxazG9F6sybGcxio/s400/Night+View.jpg" alt="Estadio Azteca Mexico City">
+            </div>
+            <div class="newyork slide">
+                <p>New York New Jersey Stadium</p>
+                <img src="https://www.constructionspecifier.com/wp-content/uploads/2024/03/MetLife-Stadium_NYC-skyline-500x324.jpg" alt="New York New Jersey Stadium">
+            </div>
+            <button type="button" id="forward"></button>
+        </section>
+        <section class="players">
+            <h3>Outstanding Players</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Best Players</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Nation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="blue">
+                        <td>Lionel Messi</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr id="green">
+                        <td>Cristiano Ronaldo</td>
+                        <td>Portugal</td>
+                    </tr>
+                    <tr id="red">
+                        <td>Robert Lewandowski</td>
+                        <td>Poland</td>
+                    </tr>
+                    <tr id="red">
+                        <td>Manuel Neuer</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr id="blue">
+                        <td>Luka Modric</td>
+                        <td>Croatia</td>
+                    </tr>
+                    <tr id="blue">
+                        <td>Kylian Mbappé</td>
+                        <td>France</td>
+                    </tr>
+                    <tr id="green">
+                        <td>Erling Haaland</td>
+                        <td>Norway</td>
+                    </tr>
+                    <tr id="green">
+                        <td>Jude Bellingham</td>
+                        <td>England</td>
+                    </tr>
+                    <tr id="red">
+                        <td>Pedri</td>
+                        <td>Spain</td>
+                    </tr>
+                    <tr id="red">
+                        <td>Lamine Yamal</td>
+                        <td>Spain</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="prediction">
+            <h3>Make Your Prediction</h3>
+            <div class="bracket">
+            <div class="column round16">
+                <input type="text" name="o1">
+                <input type="text" name="o2">
+                <input type="text" name="o3">
+                <input type="text" name="o4">
+            </div>
+            <div class="column quarter">
+                <input type="text" name="o17">
+                <input type="text" name="o18">
+            </div>
+            <div class="column semi">
+                <input type="text" name="o25">
+            </div>
+            <div class="column final">
+                <input type="text" name="o29">
+            </div>
+            <div class="column semi">
+                <input type="text" name="o26">
+            </div>
+            <div class="column quarter">
+                <input type="text" name="o19">
+                <input type="text" name="o20">
+            </div>
+            <div class="column round16">
+                <input type="text" name="o5">
+                <input type="text" name="o6">
+                <input type="text" name="o7">
+                <input type="text" name="o8">
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-right">
+            <p>Official FIFA networks:</p>
+            <ul class="social">
+                <li><a href="https://www.fifa.com" target="_blank">🌐 Website</a></li>
+                <li><a href="https://twitter.com/FIFAcom" target="_blank">🐦 Twitter</a></li>
+                <li><a href="https://www.instagram.com/fifaworldcup/" target="_blank">📸 Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-left">
+            <p>Last Modification: <span class="lastModified"></span></p>
+            <p>©<span id="currentyear"></span> Carlos Espinel</p>
+        </div>
+    </footer>
+</body>
+</html>
